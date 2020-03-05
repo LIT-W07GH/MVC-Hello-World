@@ -28,7 +28,14 @@ namespace WebApplication12.Controllers
             return View(vm);
         }
 
-        public string RandomString(int length)
+        public IActionResult InAWeek()
+        {
+            SimpleViewModel vm = new SimpleViewModel();
+            vm.DateInAWeek = DateTime.Now.AddDays(7);
+            return View(vm);
+        }
+
+        private string RandomString(int length)
         {
             Random rnd = new Random();
             string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
