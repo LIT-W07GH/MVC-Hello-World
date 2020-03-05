@@ -1,0 +1,16 @@
+﻿@using WebApplication12.Models
+@model DataViewModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+<h1>@DateTime.Now.ToLongDateString()</h1>
+<h1>The random number is @Model.SomeNumber</h1>
+<h2>The random text is @Model.SomeText</h2>
+</body>
+</html>
